@@ -81,7 +81,7 @@ export default function Dashboard() {
         const leadId = leads[editIndex]._id;
 
         await axios.put(
-          `http://localhost:5000/api/leads/${leadId}`,
+          `https://smart-leads-dashboard-wt5e.onrender.com/api/leads/${leadId}`,
           newLead
         );
 

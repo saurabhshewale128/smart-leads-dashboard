@@ -18,7 +18,7 @@ export default function Register() {
     try {
 
       await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://smart-leads-dashboard-wt5e.onrender.com/api/auth/register",
         {
           name,
           email,
