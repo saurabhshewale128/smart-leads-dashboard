@@ -472,23 +472,23 @@ export default function Dashboard() {
 
                 <PieChart>
 
-                  <Pie
-                    data={chartData}
-                    dataKey="value"
-                    outerRadius={120}
-                    label
-                  >
+                <Pie
+                data={chartData}
+                dataKey="value"
+                outerRadius={120}
+                label
+                >
 
-                    {chartData.map((entry, index) => (
+                {chartData.map((_, index) => (
 
-                      <Cell
-                        key={index}
-                        fill={COLORS[index % COLORS.length]}
-                      />
+               <Cell
+                key={index}
+                fill={COLORS[index % COLORS.length]}
+               />
 
-                    ))}
+               ))}
 
-                  </Pie>
+              </Pie>
 
                   <Tooltip />
 
